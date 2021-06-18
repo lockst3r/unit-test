@@ -10,7 +10,7 @@ describe("Message", () => {
     expect(wrappedComponent.find(".message").text()).toEqual("text for render");
   });
 
-  it("Shoud to check if the component is hidden", () => {
+  it("Should to check if the component is hidden", () => {
     const wrappedComponent = shallow(<Message text={""} />);
 
     expect(wrappedComponent.find(".mailbox_count").exists()).toEqual(false);
